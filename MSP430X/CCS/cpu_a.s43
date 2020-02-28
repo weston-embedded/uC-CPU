@@ -1,0 +1,100 @@
+;********************************************************************************************************
+;                                               uC/CPU
+;                                    CPU CONFIGURATION & PORT LAYER
+;
+;                    Copyright 2004-2020 Silicon Laboratories Inc. www.silabs.com
+;
+;                                 SPDX-License-Identifier: APACHE-2.0
+;
+;               This software is subject to an open source license and is distributed by
+;                Silicon Laboratories Inc. pursuant to the terms of the Apache License,
+;                    Version 2.0 available at www.apache.org/licenses/LICENSE-2.0.
+;
+;********************************************************************************************************
+
+;********************************************************************************************************
+;
+;                                            CPU PORT FILE
+;
+;                                             TI MSP430X
+;                                             MSP430x5xx
+;
+; Filename : cpu_a.s43
+; Version  : v1.32.00
+;********************************************************************************************************
+
+
+;********************************************************************************************************
+;                                           PUBLIC FUNCTIONS
+;********************************************************************************************************
+
+    .global  CPU_SR_Save
+    .global  CPU_SR_Restore
+
+
+;********************************************************************************************************
+;                                                EQUATES
+;********************************************************************************************************
+
+
+;********************************************************************************************************
+;                                      CODE GENERATION DIRECTIVES
+;********************************************************************************************************
+
+    .text                                   ; Program code
+
+
+;********************************************************************************************************
+;                                  SAVE/RESTORE CPU STATUS REGISTER
+;
+; Description : Save/Restore the state of CPU interrupts, if possible.
+;
+;               (1) (c) For CPU_CRITICAL_METHOD_STATUS_LOCAL, the state of the interrupt status flag is
+;                       stored in the local variable 'cpu_sr' & interrupts are then disabled ('cpu_sr' is
+;                       allocated in all functions that need to disable interrupts).  The previous interrupt
+;                       status state is restored by copying 'cpu_sr' into the CPU's status register.
+;
+;
+; Prototypes  : CPU_SR  CPU_SR_Save   (void);
+;               void    CPU_SR_Restore(CPU_SR  cpu_sr);
+;
+; Note(s)     : (1) These functions are used in general like this :
+;
+;                       void  Task (void  *p_arg)
+;                       {
+;                           CPU_SR_ALLOC();                     /* Allocate storage for CPU status register */
+;                               :
+;                               :
+;                           CPU_CRITICAL_ENTER();               /* cpu_sr = CPU_SR_Save();                  */
+;                               :
+;                               :
+;                           CPU_CRITICAL_EXIT();                /* CPU_SR_Restore(cpu_sr);                  */
+;                               :
+;                       }
+;
+;               (2) R12 is assumed to hold the argument passed to CPU_SR_Save() & also the value returned
+;                   by CPU_SR_Restore().
+;********************************************************************************************************
+
+    .asmfunc
+CPU_SR_Save:
+    MOV.W   SR, R12
+    DINT
+    NOP
+    RETA
+    .endasmfunc
+
+    .asmfunc
+CPU_SR_Restore:
+    MOV.W   R12, SR
+    NOP
+    RETA
+    .endasmfunc
+
+
+;********************************************************************************************************
+;                                     CPU ASSEMBLY PORT FILE END
+;********************************************************************************************************
+
+    .end
+
