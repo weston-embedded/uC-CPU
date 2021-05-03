@@ -22,7 +22,7 @@
 ;                                                Paged
 ;
 ; Filename : cpu_a.s
-; Version  : v1.32.00
+; Version  : V1.32.01
 ;********************************************************************************************************
 
 
@@ -64,4 +64,3 @@ CPU_SR_Save:
 CPU_SR_Restore:
     tap                               ; Restore the CCR from the function argument stored in A
     rtc
-

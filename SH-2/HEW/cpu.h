@@ -23,7 +23,7 @@
 *                                    Renesas HEW w/ SH C compiler
 *
 * Filename : cpu.h
-* Version  : v1.32.00
+* Version  : V1.32.01
 *********************************************************************************************************
 */
 
@@ -471,4 +471,3 @@ typedef  CPU_INT32U                 CPU_SR;                     /* Defines   CPU
 */
 
 #endif                                                          /* End of CPU module include.                           */
-

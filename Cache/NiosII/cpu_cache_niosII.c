@@ -23,7 +23,7 @@
 *                                             Altera Nios II
 *
 * Filename : cpu_cache_niosII.c
-* Version  : v1.32.00
+* Version  : V1.32.01
 *********************************************************************************************************
 */
 
@@ -157,4 +157,3 @@ void  CPU_DCache_RangeInv (void      *addr_start,
    (void)&addr_start;                                           /* Prevent possible 'variable unused' warning.          */
    (void)&len;                                                  /* Prevent possible 'variable unused' warning.          */
 }
-

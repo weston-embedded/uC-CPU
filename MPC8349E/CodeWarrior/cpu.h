@@ -22,7 +22,7 @@
 *                                          Freescale MPC8349E
 *
 * Filename : cpu.h
-* Version  : v1.32.00
+* Version  : V1.32.01
 *********************************************************************************************************
 */
 
@@ -477,4 +477,3 @@ void        CPU_TBU_Set   (CPU_INT32U  val);
 #endif
 
 #endif                                                          /* End of CPU module include.                           */
-

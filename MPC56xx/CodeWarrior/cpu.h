@@ -22,7 +22,7 @@
 *                                          Freescale MPC56xx
 *
 * Filename : cpu.h
-* Version  : v1.32.00
+* Version  : V1.32.01
 *********************************************************************************************************
 */
 
@@ -499,4 +499,3 @@ void        CPU_IVOR34_Set(CPU_FNCT_VOID  fnct);
 #endif
 
 #endif                                                          /* End of CPU module include.                           */
-

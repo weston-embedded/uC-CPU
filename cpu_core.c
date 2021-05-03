@@ -20,7 +20,7 @@
 *                                           CORE CPU MODULE
 *
 * Filename : cpu_core.c
-* Version  : v1.32.00
+* Version  : V1.32.01
 *********************************************************************************************************
 */
 
@@ -2251,4 +2251,3 @@ static  CPU_TS_TMR  CPU_IntDisMeasMaxCalc (CPU_TS_TMR  time_tot_cnts)
     return (time_max_cnts);
 }
 #endif
-

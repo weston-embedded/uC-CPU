@@ -23,7 +23,7 @@
 *                                            GNU C Compiler
 *
 * Filename : cpu_a.s
-* Version  : v1.32.00
+* Version  : V1.32.01
 *********************************************************************************************************
 */
 
@@ -82,4 +82,3 @@ CPU_SR_Save:
 CPU_SR_Restore:
         OUT     SREG,R16                                        /* Restore SREG                                         */
         RET                                                     /* Return                                               */
-

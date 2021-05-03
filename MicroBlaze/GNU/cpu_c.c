@@ -23,7 +23,7 @@
 *                                                 GNU
 *
 * Filename : cpu_c.c
-* Version  : v1.32.00
+* Version  : V1.32.01
 *********************************************************************************************************
 */
 
@@ -94,4 +94,3 @@ void  CPU_CacheDataInvalidate (void        *addr,
 #ifdef __cplusplus
 }
 #endif
-

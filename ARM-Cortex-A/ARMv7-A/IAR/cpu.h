@@ -23,7 +23,7 @@
 *                                              IAR EWARM
 *
 * Filename : cpu.h
-* Version  : v1.32.00
+* Version  : V1.32.01
 *********************************************************************************************************
 */
 
@@ -511,4 +511,3 @@ void        CPU_WaitForEvent (void);
 #endif
 
 #endif                                                          /* End of CPU module include.                           */
-

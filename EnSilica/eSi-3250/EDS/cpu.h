@@ -24,7 +24,7 @@
 *
 *
 * Filename : cpu.h
-* Version  : v1.32.00
+* Version  : V1.32.01
 *********************************************************************************************************
 */
 
@@ -538,4 +538,3 @@ CPU_DATA  CPU_GetTC        (void);                              /* Get Thread Co
 #endif
 
 #endif                                                          /* End of CPU module include.                           */
-

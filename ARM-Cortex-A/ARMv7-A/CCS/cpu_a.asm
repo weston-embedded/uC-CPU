@@ -20,7 +20,7 @@
 ;                                            TI C Compiler
 ;
 ; Filename : cpu_a.asm
-; Version  : v1.32.00
+; Version  : V1.32.01
 ;********************************************************************************************************
 
      .text
@@ -219,4 +219,3 @@ CPU_CntTrailZeros:
         RBIT    R0, R0                          ; Reverse bits
         CLZ     R0, R0                          ; Count trailing zeros
         BX      LR
-

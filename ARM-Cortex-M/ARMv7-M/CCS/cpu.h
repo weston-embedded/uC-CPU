@@ -23,7 +23,7 @@
 *                                            TI C Compiler
 *
 * Filename : cpu.h
-* Version  : v1.32.00
+* Version  : V1.32.01
 *********************************************************************************************************
 * Note(s)  : This port supports the ARM Cortex-M3, Cortex-M4 and Cortex-M7 architectures.
 *********************************************************************************************************
@@ -759,4 +759,3 @@ void        CPU_BitBandSet   (CPU_ADDR    addr,
 #endif
 
 #endif                                                          /* End of CPU module include.                           */
-

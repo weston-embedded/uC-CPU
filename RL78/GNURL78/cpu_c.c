@@ -22,7 +22,7 @@
 *                                          GNU RL78 C Compiler
 *
 * Filename : cpu_c.c
-* Version  : v1.32.00
+* Version  : V1.32.01
 *********************************************************************************************************
 */
 
@@ -55,4 +55,3 @@ CPU_INT08U __get_interrupt_state(void){
 
     return(cpu_sr);
 }
-

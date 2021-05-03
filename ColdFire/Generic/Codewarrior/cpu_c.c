@@ -23,7 +23,7 @@
 *                                             Codewarrior
 *
 * Filename : cpu_c.c
-* Version  : v1.32.00
+* Version  : V1.32.01
 *********************************************************************************************************
 */
 
@@ -114,4 +114,3 @@ void  CPU_VectSet (CPU_INT16U vect, void (*vect_addr)(void))
 #ifdef __cplusplus
 }
 #endif
-

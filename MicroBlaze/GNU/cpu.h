@@ -23,7 +23,7 @@
 *                                            GNU C Compiler
 *
 * Filename : cpu.h
-* Version  : v1.32.00
+* Version  : V1.32.01
 *********************************************************************************************************
 */
 
@@ -493,4 +493,3 @@ void    CPU_CacheDataInvalidate (void *addr, CPU_INT32U len);
 #endif
 
 #endif                                                          /* End of CPU module include.                           */
-

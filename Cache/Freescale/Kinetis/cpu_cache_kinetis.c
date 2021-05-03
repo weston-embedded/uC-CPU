@@ -23,7 +23,7 @@
 *                                           Freescale Kinetis
 *
 * Filename : cpu_cache_kinetis.c
-* Version  : v1.32.00
+* Version  : V1.32.01
 *********************************************************************************************************
 */
 
@@ -335,4 +335,3 @@ void  CPU_Cache_Do (CPU_INT32U   what,
    (void)&len;
 #endif
 }
-

@@ -23,7 +23,7 @@
 *                                            GNU Toolchain
 *
 * Filename : cpu.h
-* Version  : v1.32.00
+* Version  : V1.32.01
 *********************************************************************************************************
 */
 
@@ -531,4 +531,3 @@ void  CPU_InterruptTrigger   (CPU_INTERRUPT  *p_interrupt);
 #endif
 
 #endif                                                          /* End of CPU module include.                           */
-

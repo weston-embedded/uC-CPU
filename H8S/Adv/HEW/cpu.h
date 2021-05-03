@@ -23,7 +23,7 @@
 *                                         Renesas HEW Compiler
 *
 * Filename : cpu.h
-* Version  : v1.32.00
+* Version  : V1.32.01
 *********************************************************************************************************
 */
 
@@ -476,4 +476,3 @@ void    CPU_SR_Restore(CPU_SR  cpu_sr);
 */
 
 #endif                                                          /* End of CPU module include.                           */
-

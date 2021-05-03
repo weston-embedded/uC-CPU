@@ -23,7 +23,7 @@
 *                                       CW for Microcontrollers
 *
 * Filename : cpu.h
-* Version  : v1.32.00
+* Version  : V1.32.01
 *********************************************************************************************************
 */
 
@@ -490,4 +490,3 @@ void     CPU_VectSet   (CPU_INT16U    vect,
 #endif
 
 #endif                                                          /* End of CPU module include.                           */
-

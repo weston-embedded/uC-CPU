@@ -22,7 +22,7 @@
 *                                              TEMPLATE
 *
 * Filename : bsp_cpu.c
-* Version  : v1.32.00
+* Version  : V1.32.01
 *********************************************************************************************************
 */
 
@@ -299,4 +299,3 @@ CPU_INT64U  CPU_TS64_to_uSec (CPU_TS64  ts_cnts)
     return (0u);
 }
 #endif
-

@@ -26,7 +26,7 @@
 *                                            Keil uVision
 *
 * Filename : cpu.h
-* Version  : v1.32.00
+* Version  : V1.32.01
 *********************************************************************************************************
 */
 
@@ -604,4 +604,3 @@ void    CPU_FIQ_Dis   (void);
 #endif
 
 #endif                                                          /* End of CPU module include.                           */
-

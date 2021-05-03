@@ -24,7 +24,7 @@
 *
 *
 * Filename : cpu.h
-* Version  : v1.32.00
+* Version  : V1.32.01
 *********************************************************************************************************
 */
 
@@ -574,4 +574,3 @@ extern  cregister  volatile  unsigned  int  IER;
 #endif
 
 #endif                                                          /* End of CPU module include.                           */
-

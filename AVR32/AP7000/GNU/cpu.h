@@ -23,7 +23,7 @@
 *                                            GNU C Compiler
 *
 * Filename : cpu.h
-* Version  : v1.32.00
+* Version  : V1.32.01
 *********************************************************************************************************
 */
 
@@ -510,4 +510,3 @@ void        CPU_SysReg_Set_Compare(CPU_INT32U  val);
 #endif
 
 #endif                                                          /* End of CPU module include.                           */
-

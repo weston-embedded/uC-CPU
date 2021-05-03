@@ -23,7 +23,7 @@
 *                                        IAR compiler for V850
 *
 * Filename : cpu.h
-* Version  : v1.32.00
+* Version  : V1.32.01
 *********************************************************************************************************
 */
 
@@ -488,4 +488,3 @@ CPU_DATA  CPU_ECR_Rd    (void);                                 /* Reads   CPU E
 #endif
 
 #endif                                                          /* End of CPU module include.                           */
-

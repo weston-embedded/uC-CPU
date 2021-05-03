@@ -23,7 +23,7 @@
 *                                       Microsoft Visual Studio
 *
 * Filename : cpu.h
-* Version  : v1.32.00
+* Version  : V1.32.01
 *********************************************************************************************************
 */
 
@@ -506,4 +506,3 @@ void  CPU_IntEn  (void);
 #endif
 
 #endif                                                          /* End of CPU module include.                           */
-
