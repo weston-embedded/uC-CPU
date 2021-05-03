@@ -36,6 +36,13 @@
 *********************************************************************************************************
 */
 
+/* 199309UL: CLOCK_MONOTONIC, clock_gettime, clock_settime
+ * 199506UL: pthread_sigmask
+ * 200112UL: clock_nanosleep
+ * 200809UL: PTHREAD_MUTEX_RECURSIVE, SA_NODEFER, pthread_mutexattr_settype
+ */
+#define _POSIX_C_SOURCE 200809UL
+
 #include  <stdio.h>
 #include  <pthread.h>
 #include  <stdlib.h>
@@ -116,10 +123,6 @@ static  sigset_t              CPU_IRQ_SigMask;
 *                                       LOCAL FUNCTION PROTOTYPES
 *********************************************************************************************************
 */
-
-#if  (_POSIX_C_SOURCE < 199309L)
-#error  "_POSIX_C_SOURCE is required to be at least 199309L"
-#endif
 
 static  void   CPU_IRQ_Handler       (int  sig);
 
