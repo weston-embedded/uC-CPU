@@ -2,7 +2,7 @@
 ;                                               uC/CPU
 ;                                    CPU CONFIGURATION & PORT LAYER
 ;
-;                    Copyright 2004-2020 Silicon Laboratories Inc. www.silabs.com
+;                    Copyright 2004-2021 Silicon Laboratories Inc. www.silabs.com
 ;
 ;                                 SPDX-License-Identifier: APACHE-2.0
 ;
@@ -20,7 +20,7 @@
 ;                                            TI C Compiler
 ;
 ; Filename : cpu_a.asm
-; Version  : v1.32.00
+; Version  : V1.32.01
 ;********************************************************************************************************
 ; Note(s)  : This port supports the ARM Cortex-M3, Cortex-M4 and Cortex-M7 architectures.
 ;********************************************************************************************************
@@ -299,4 +299,3 @@ CPU_RevBits:
 ;********************************************************************************************************
 
     .end
-

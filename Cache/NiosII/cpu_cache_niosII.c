@@ -3,7 +3,7 @@
 *                                               uC/CPU
 *                                    CPU CONFIGURATION & PORT LAYER
 *
-*                    Copyright 2004-2020 Silicon Laboratories Inc. www.silabs.com
+*                    Copyright 2004-2021 Silicon Laboratories Inc. www.silabs.com
 *
 *                                 SPDX-License-Identifier: APACHE-2.0
 *
@@ -23,7 +23,7 @@
 *                                             Altera Nios II
 *
 * Filename : cpu_cache_niosII.c
-* Version  : v1.32.00
+* Version  : V1.32.01
 *********************************************************************************************************
 */
 
@@ -157,4 +157,3 @@ void  CPU_DCache_RangeInv (void      *addr_start,
    (void)&addr_start;                                           /* Prevent possible 'variable unused' warning.          */
    (void)&len;                                                  /* Prevent possible 'variable unused' warning.          */
 }
-

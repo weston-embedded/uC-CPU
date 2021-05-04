@@ -2,7 +2,7 @@
 ;                                               uC/CPU
 ;                                    CPU CONFIGURATION & PORT LAYER
 ;
-;                    Copyright 2004-2020 Silicon Laboratories Inc. www.silabs.com
+;                    Copyright 2004-2021 Silicon Laboratories Inc. www.silabs.com
 ;
 ;                                 SPDX-License-Identifier: APACHE-2.0
 ;
@@ -22,7 +22,7 @@
 ;                                      $$$$ Insert Compiler Name
 ;
 ; Filename : cpu_a.asm            $$$$ Insert CPU assembly port file name
-; Version  : v1.32.00          $$$$ Insert CPU assembly port file version number
+; Version  : V1.32.01          $$$$ Insert CPU assembly port file version number
 ;********************************************************************************************************
 ; Note(s)  : (1) To provide the required CPU port functionality, insert the appropriate CPU- &/or
 ;                compiler-specific code to perform the stated actions wherever '$$$$' comments are
@@ -374,4 +374,3 @@ CPU_RevBits
 ;********************************************************************************************************
 
                                 ; $$$$ Insert assembly end-of-file directive, if any
-

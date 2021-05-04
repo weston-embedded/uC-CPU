@@ -3,7 +3,7 @@
 *                                               uC/CPU
 *                                    CPU CONFIGURATION & PORT LAYER
 *
-*                    Copyright 2004-2020 Silicon Laboratories Inc. www.silabs.com
+*                    Copyright 2004-2021 Silicon Laboratories Inc. www.silabs.com
 *
 *                                 SPDX-License-Identifier: APACHE-2.0
 *
@@ -23,7 +23,7 @@
 *                                            GNU Toolchain
 *
 * Filename : cpu.h
-* Version  : v1.32.00
+* Version  : V1.32.01
 *********************************************************************************************************
 */
 
@@ -76,7 +76,6 @@
 
 #include  <stddef.h>
 #include  <stdint.h>
-#include  <pthread.h>
 
 #include  <cpu_def.h>
 #include  <cpu_cfg.h>                                           /* See Note #3.                                         */
@@ -532,4 +531,3 @@ void  CPU_InterruptTrigger   (CPU_INTERRUPT  *p_interrupt);
 #endif
 
 #endif                                                          /* End of CPU module include.                           */
-

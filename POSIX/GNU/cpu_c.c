@@ -3,7 +3,7 @@
 *                                               uC/CPU
 *                                    CPU CONFIGURATION & PORT LAYER
 *
-*                    Copyright 2004-2020 Silicon Laboratories Inc. www.silabs.com
+*                    Copyright 2004-2021 Silicon Laboratories Inc. www.silabs.com
 *
 *                                 SPDX-License-Identifier: APACHE-2.0
 *
@@ -22,7 +22,7 @@
 *                                                POSIX
 *
 * Filename : cpu_c.c
-* Version  : v1.32.00
+* Version  : V1.32.01
 *********************************************************************************************************
 * Notes    : (1) Requires a Single UNIX Specification, Version 3 compliant operating environment.
 *                On Linux _XOPEN_SOURCE must be defined to at least 600, generally by passing the
@@ -35,6 +35,13 @@
 *                                            INCLUDE FILES
 *********************************************************************************************************
 */
+
+/* 199309UL: CLOCK_MONOTONIC, clock_gettime, clock_settime
+ * 199506UL: pthread_sigmask
+ * 200112UL: clock_nanosleep
+ * 200809UL: PTHREAD_MUTEX_RECURSIVE, SA_NODEFER, pthread_mutexattr_settype
+ */
+#define _POSIX_C_SOURCE 200809UL
 
 #include  <stdio.h>
 #include  <pthread.h>
@@ -116,10 +123,6 @@ static  sigset_t              CPU_IRQ_SigMask;
 *                                       LOCAL FUNCTION PROTOTYPES
 *********************************************************************************************************
 */
-
-#if  (_POSIX_C_SOURCE < 199309L)
-#error  "_POSIX_C_SOURCE is required to be at least 199309L"
-#endif
 
 static  void   CPU_IRQ_Handler       (int  sig);
 
