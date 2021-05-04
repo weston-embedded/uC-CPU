@@ -3,7 +3,7 @@
 *                                               uC/CPU
 *                                    CPU CONFIGURATION & PORT LAYER
 *
-*                    Copyright 2004-2020 Silicon Laboratories Inc. www.silabs.com
+*                    Copyright 2004-2021 Silicon Laboratories Inc. www.silabs.com
 *
 *                                 SPDX-License-Identifier: APACHE-2.0
 *
@@ -20,7 +20,7 @@
 *                                           CORE CPU MODULE
 *
 * Filename : cpu_core.h
-* Version  : V1.32.00
+* Version  : V1.32.01
 *********************************************************************************************************
 * Note(s)  : (1) Assumes the following versions (or more recent) of software modules are included in
 *                the project build :
@@ -1028,4 +1028,3 @@ CPU_INT64U  CPU_TS64_to_uSec(CPU_TS64  ts_cnts);
 }
 #endif
 #endif                                                          /* End of CPU core module include.                      */
-

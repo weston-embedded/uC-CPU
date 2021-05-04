@@ -3,7 +3,7 @@
 *                                               uC/CPU
 *                                    CPU CONFIGURATION & PORT LAYER
 *
-*                    Copyright 2004-2020 Silicon Laboratories Inc. www.silabs.com
+*                    Copyright 2004-2021 Silicon Laboratories Inc. www.silabs.com
 *
 *                                 SPDX-License-Identifier: APACHE-2.0
 *
@@ -22,7 +22,7 @@
 *                                                POSIX
 *
 * Filename : cpu_c.c
-* Version  : v1.32.00
+* Version  : V1.32.01
 *********************************************************************************************************
 * Notes    : (1) Requires a Single UNIX Specification, Version 3 compliant operating environment.
 *                On Linux _XOPEN_SOURCE must be defined to at least 600, generally by passing the

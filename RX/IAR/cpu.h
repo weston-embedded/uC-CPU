@@ -3,7 +3,7 @@
 *                                               uC/CPU
 *                                    CPU CONFIGURATION & PORT LAYER
 *
-*                    Copyright 2004-2020 Silicon Laboratories Inc. www.silabs.com
+*                    Copyright 2004-2021 Silicon Laboratories Inc. www.silabs.com
 *
 *                                 SPDX-License-Identifier: APACHE-2.0
 *
@@ -23,7 +23,7 @@
 *                                          IAR RX C compiler
 *
 * Filename : cpu.h
-* Version  : v1.32.00
+* Version  : V1.32.01
 *********************************************************************************************************
 */
 
@@ -517,4 +517,3 @@ typedef  CPU_INT32U                 CPU_SR;                     /* Defines   CPU
 */
 
 #endif                                                          /* End of CPU module include.                           */
-

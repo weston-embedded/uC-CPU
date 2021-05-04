@@ -3,7 +3,7 @@
 *                                               uC/CPU
 *                                    CPU CONFIGURATION & PORT LAYER
 *
-*                    Copyright 2004-2020 Silicon Laboratories Inc. www.silabs.com
+*                    Copyright 2004-2021 Silicon Laboratories Inc. www.silabs.com
 *
 *                                 SPDX-License-Identifier: APACHE-2.0
 *
@@ -22,7 +22,7 @@
 *                                              L1 Cache
 *
 * Filename : cpu_cache_powerpc_e200z4204n3.c
-* Version  : v1.32.00
+* Version  : V1.32.01
 *********************************************************************************************************
 */
 

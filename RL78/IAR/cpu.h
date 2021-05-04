@@ -3,7 +3,7 @@
 *                                               uC/CPU
 *                                    CPU CONFIGURATION & PORT LAYER
 *
-*                    Copyright 2004-2020 Silicon Laboratories Inc. www.silabs.com
+*                    Copyright 2004-2021 Silicon Laboratories Inc. www.silabs.com
 *
 *                                 SPDX-License-Identifier: APACHE-2.0
 *
@@ -23,7 +23,7 @@
 *                                        IAR compiler for RL78
 *
 * Filename : cpu.h
-* Version  : v1.32.00
+* Version  : V1.32.01
 *********************************************************************************************************
 */
 
@@ -494,4 +494,3 @@ void    CPU_SR_Restore(CPU_SR  cpu_sr);
 */
 
 #endif                                                          /* End of CPU module include.                           */
-
